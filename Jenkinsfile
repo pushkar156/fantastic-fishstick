@@ -3,7 +3,7 @@ pipeline {
 
     environment {
         // REPLACE with your actual Docker Hub username (e.g., 'johndoe')
-        DOCKER_HUB_USER = 'YOUR_DOCKERHUB_USERNAME'
+        DOCKER_HUB_USER = 'pushkar156'
         IMAGE_NAME      = "${DOCKER_HUB_USER}/devops-portal"
         APP_NAME        = "devops-portal"
         KUBECONFIG      = "/var/lib/jenkins/.kube/config"
