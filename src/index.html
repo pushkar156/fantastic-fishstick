@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CloudOps Hub - Cloud Computing & DevOps Master Guide</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Header / Navigation -->
+  <header class="navbar">
+    <div class="container nav-content">
+      <div class="logo">
+        <span class="logo-icon">☁️</span>
+        <span class="logo-text">CloudOps<strong>Hub</strong></span>
+      </div>
+      <nav class="nav-links">
+        <a href="#cloud">Cloud Computing</a>
+        <a href="#devops">DevOps</a>
+        <a href="#pipeline">CI/CD Pipeline</a>
+        <a href="#architecture">Architecture</a>
+      </nav>
+      <div class="version-badge" id="versionBadge">
+        <span class="pulse-dot"></span>
+        <span class="version-label">Release:</span>
+        <span class="version-number" id="versionText">v1.0.0</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container hero-content">
+      <div class="hero-tag">TYCSE · Cloud Computing & DevOps (CCA 2)</div>
+      <h1 class="hero-title">Continuous Delivery for <span class="gradient-text">Modern Cloud & DevOps</span></h1>
+      <p class="hero-subtitle">
+        An automated end-to-end CI/CD delivery pipeline demonstrating GitHub source control, 
+        containerization with Docker, registry publishing, and automated deployment onto Kubernetes via Jenkins.
+      </p>
+      <div class="hero-buttons">
+        <a href="#pipeline" class="btn btn-primary">Explore Pipeline Stages</a>
+        <a href="#architecture" class="btn btn-secondary">System Architecture</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quick Metrics Banner -->
+  <section class="metrics-bar">
+    <div class="container metrics-grid">
+      <div class="metric-card">
+        <div class="metric-value">6+</div>
+        <div class="metric-label">Automated Stages</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-value">Zero</div>
+        <div class="metric-label">Manual Deployments</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-value">100%</div>
+        <div class="metric-label">Containerized (Docker)</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-value">K8s</div>
+        <div class="metric-label">Orchestrated (Minikube)</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content Section: Cloud Computing -->
+  <section id="cloud" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge">Module 1</span>
+        <h2>Core Concepts: Cloud Computing</h2>
+        <p>On-demand availability of computer system resources without direct active management by the user.</p>
+      </div>
+      <div class="cards-grid">
+        <div class="info-card">
+          <div class="card-icon">🖥️</div>
+          <h3>IaaS (Infrastructure as a Service)</h3>
+          <p>Provides raw virtualized computing resources, storage, and networking (e.g., AWS EC2, S3, VPC). You manage the OS, runtime, and apps.</p>
+        </div>
+        <div class="info-card">
+          <div class="card-icon">⚙️</div>
+          <h3>PaaS (Platform as a Service)</h3>
+          <p>Delivers a hardware and software tools environment over the internet for app development (e.g., AWS Elastic Beanstalk, Heroku).</p>
+        </div>
+        <div class="info-card">
+          <div class="card-icon">📦</div>
+          <h3>SaaS (Software as a Service)</h3>
+          <p>End-user applications hosted and operated in the cloud, completely managed by the provider (e.g., Gmail, GitHub, Microsoft 365).</p>
+        </div>
+        <div class="info-card">
+          <div class="card-icon">🌐</div>
+          <h3>Cloud Deployment Models</h3>
+          <p>Public Cloud (multi-tenant on AWS/GCP), Private Cloud (dedicated internal infrastructure), and Hybrid Cloud (combines on-premise & public cloud).</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content Section: DevOps -->
+  <section id="devops" class="section bg-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge">Module 2</span>
+        <h2>Core Concepts: DevOps & Automation</h2>
+        <p>Bridging the gap between software development and IT operations to deliver value faster and more reliably.</p>
+      </div>
+      <div class="cards-grid">
+        <div class="info-card">
+          <div class="card-icon">🔄</div>
+          <h3>Continuous Integration (CI)</h3>
+          <p>Developers merge code changes into a central repository regularly. Automated builds and tests run to detect defects early.</p>
+        </div>
+        <div class="info-card">
+          <div class="card-icon">🚀</div>
+          <h3>Continuous Deployment (CD)</h3>
+          <p>Every validated change is automatically packaged, tested, and deployed to staging or production without manual intervention.</p>
+        </div>
+        <div class="info-card">
+          <div class="card-icon">🐳</div>
+          <h3>Containerization (Docker)</h3>
+          <p>Packages application code and all its dependencies into an immutable container image ensuring identical runtime behavior anywhere.</p>
+        </div>
+        <div class="info-card">
+          <div class="card-icon">☸️</div>
+          <h3>Orchestration (Kubernetes)</h3>
+          <p>Automates deployment, scaling, load balancing, health monitoring, and self-healing of containerized applications.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Pipeline Flow Section -->
+  <section id="pipeline" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge">Live Pipeline</span>
+        <h2>Automated Jenkins Pipeline Stages</h2>
+        <p>Click on any stage below to inspect its purpose, tools, and execution command.</p>
+      </div>
+      
+      <div class="pipeline-stepper" id="pipelineStepper">
+        <button class="step-btn active" data-step="1">1. Git SCM</button>
+        <button class="step-btn" data-step="2">2. Build & Test</button>
+        <button class="step-btn" data-step="3">3. Docker Build</button>
+        <button class="step-btn" data-step="4">4. Registry Push</button>
+        <button class="step-btn" data-step="5">5. K8s Deploy</button>
+        <button class="step-btn" data-step="6">6. Verify</button>
+      </div>
+
+      <div class="stage-detail-box" id="stageDetailBox">
+        <h3 id="stageTitle">Stage 1: Source Code Checkout</h3>
+        <p id="stageDesc">Jenkins pulls the latest commit from the GitHub repository automatically whenever changes are pushed.</p>
+        <div class="terminal-box">
+          <div class="terminal-bar">
+            <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+            <span class="terminal-title">Jenkinsfile Snippet</span>
+          </div>
+          <pre id="stageSnippet"><code>checkout scm</code></pre>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Architecture / Technical Stack Section -->
+  <section id="architecture" class="section bg-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge">Infrastructure</span>
+        <h2>Target Environment Architecture</h2>
+        <p>The complete end-to-end tooling deployed on AWS EC2.</p>
+      </div>
+
+      <div class="architecture-grid">
+        <div class="arch-card">
+          <span class="arch-tag">Cloud Host</span>
+          <h3>AWS EC2 (Ubuntu 22.04)</h3>
+          <p>Hosts Jenkins CI controller, Docker engine, and local Minikube cluster on a <code>t3.medium</code> instance.</p>
+        </div>
+        <div class="arch-card">
+          <span class="arch-tag">Automation Engine</span>
+          <h3>Jenkins LTS</h3>
+          <p>Runs pipeline-as-code via <code>Jenkinsfile</code>, orchestrating build, test, containerization, and rollout.</p>
+        </div>
+        <div class="arch-card">
+          <span class="arch-tag">Container Registry</span>
+          <h3>Docker Hub</h3>
+          <p>Securely stores versioned container images tagged with unique Jenkins build numbers and <code>:latest</code>.</p>
+        </div>
+        <div class="arch-card">
+          <span class="arch-tag">Cluster Runtime</span>
+          <h3>Minikube &amp; Kubectl</h3>
+          <p>Executes rolling updates of 2 pods across a NodePort Service reachable at port <code>30080</code>.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>Cloud Computing and DevOps Continuous Assessment (CCA 2) · TYCSE</p>
+      <p class="footer-note">Built with HTML5, CSS3, JavaScript, Docker, Kubernetes &amp; Jenkins on AWS.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
