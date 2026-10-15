@@ -102,5 +102,5 @@ document.addEventListener("DOMContentLoaded", () => {
       .replace(/'/g, "&#039;");
   }
 
-  console.log("CloudOps Hub application loaded successfully - v1.0.0");
+  console.log("CloudOps Hub application loaded successfully - v2.0.0");
 });
